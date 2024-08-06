@@ -2,6 +2,5 @@ streamlit
 nltk
 Pandas
 Numpy
-pickle
 string
 time
