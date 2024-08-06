@@ -1,9 +1,8 @@
-%pip install nltk
 import streamlit as st
 import pickle
 import string
 from nltk.corpus import stopwords
-import nltk
+import nltk==3.6.2
 from nltk.stem.porter import PorterStemmer
 import time
 
