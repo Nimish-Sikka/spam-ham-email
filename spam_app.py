@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import string
 from nltk.corpus import stopwords
-import nltk==3.6.2
+import nltk
 from nltk.stem.porter import PorterStemmer
 import time
 
