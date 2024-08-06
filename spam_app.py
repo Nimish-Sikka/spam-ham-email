@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+import joblib
 import string
 from nltk.corpus import stopwords
 import nltk
@@ -34,8 +34,8 @@ def transforming_text(text):
     return " ".join(y)
 
 
-tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
-model = pickle.load(open('model.pkl', 'rb'))
+tfidf = joblib.load('vectorizer.pkl', 'rb')
+model = joblib.load('model.pkl', 'rb')
 
 st.set_page_config(page_title="Email/SMS Spam Classifier", layout="wide")
 
