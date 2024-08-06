@@ -33,9 +33,9 @@ def transforming_text(text):
 
     return " ".join(y)
 
-
-tfidf = joblib.load('vectorizer.pkl', 'rb')
-model = joblib.load('model.pkl', 'rb')
+# Load vectorizer and model using joblib
+tfidf = joblib.load('vectorizer.pkl')
+model = joblib.load('model.pkl')
 
 st.set_page_config(page_title="Email/SMS Spam Classifier", layout="wide")
 
